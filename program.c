@@ -1,19 +1,24 @@
 #include <stdio.h>
 
+
+
 int sum(int n)
 {
   if (n == 0) return 0;
   return n + sum(n-1);
 }
-int fib(int n){
 
-return n;
+int fib(int n){
+if(n==0) return 0;
+if(n==1) return 1;
+            return fib(n-1)+ fib(n-2)
 }
 
 int main()
 {
   printf("Hello world!\n");
-  int num=sum(5)
-  printf("%d\n", fib(num));
+  
+  
+  printf("%d\n", sum(fib(5)));
   return 0;
 }
